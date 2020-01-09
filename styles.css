@@ -7,3 +7,112 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  display: flex;
+  height: 8vh;
+  justify-content: space-between;
+}
+
+h1 {
+  align-self: flex-end;
+  font-size: 3em;
+  margin-left: 10px;
+}
+
+ul {
+  display: flex;
+  margin: 10px;
+}
+
+li {
+  margin: 0.4em;
+}
+
+#home {
+  text-decoration: underline;
+}
+
+main {
+  background-color: #f2f2f2;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 30% 30% 40%;
+  grid-template-areas:
+    "form image"
+    "form activeC"
+    "contentC contentC";
+  height: 92vh;
+}
+
+form,
+section {
+  background-color: #fff;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+}
+
+.form-style {
+  margin: auto;
+  width: 80%;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+form {
+  display: flex;
+  grid-area: form;
+  margin: 10px;
+}
+
+input,
+textarea {
+  margin-top: 5px;
+  padding: 10px;
+}
+
+.image-container {
+  grid-area: image;
+  margin: 10px;
+}
+
+.active-container {
+  grid-area: activeC;
+  margin: 10px;
+}
+
+.content-container {
+  grid-area: contentC;
+  margin: 10px;
+  padding: 20px;
+}
+
+h2,
+p {
+  margin: 20px;
+}
+
+table {
+  margin: auto;
+  width: 90%;
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+th,
+td {
+  padding: 10px;
+  border: solid 1px #000;
+}
