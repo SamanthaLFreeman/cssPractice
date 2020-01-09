@@ -116,3 +116,19 @@ td {
   padding: 10px;
   border: solid 1px #000;
 }
+
+@media screen and (max-width: 935px) {
+  main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 30% 40%;
+    grid-template-areas:
+      "form form"
+      "image activeC"
+      "contentC contentC";
+  }
+
+  textarea {
+    height: 80px;
+  }
+}
